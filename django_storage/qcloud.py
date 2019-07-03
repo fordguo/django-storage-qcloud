@@ -56,7 +56,7 @@ class QcloudStorage(Storage):
             url = "{}/{}".format(settings.COS_URL, name)
         else:
             url = "http://{}.cos.{}.myqcloud.com/{}".format(
-                self.bucket, self.option['region'], name
+                self.bucket, self.option['Region'], name
             )
 
         return url
