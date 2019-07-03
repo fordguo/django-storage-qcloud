@@ -11,7 +11,7 @@ django-storage-qcloud 是一个服务于腾讯云存储的 Django 自定义存�
 - 使用 pip 安装
 
 ```
-pip install https://github.com/fordguo/django-storage-qcloud.git
+pip install git+https://github.com/fordguo/django-storage-qcloud.git
 ```
 
 - 添加 requirements.txt
@@ -22,16 +22,16 @@ git+https://github.com/fordguo/django-storage-qcloud.git
 
 - 配置 setting.py:
   - 将上传文件存放到云
-    `DEFAULT_FILE_STORAGE = 'qcloudcos.qcloudstorage.QcloudStorage'`
+    `DEFAULT_FILE_STORAGE = 'django_storage.qcloud.QcloudStorage'`
   - 将静态文件存放到云
-    `STATICFILES_STORAGE = 'qcloudcos.qcloudstorage.QcloudStorage'`
+    `STATICFILES_STORAGE = 'django_storage.qcloud.QcloudStorage'`
   - 替换 SecretId， SecretKey, Region, Bucket 的值
   ```
   QCLOUD_STORAGE_OPTION = {
-      'SecretId': 'SecretId: SecretId 是开发者拥有的项目身份识别 ID，用以身份认证',
-      'SecretKey': 'SecretKey: SecretKey 是开发者拥有的项目身份密钥。',
+      'SecretId': 'SecretId 是开发者拥有的项目身份识别 ID，用以身份认证',
+      'SecretKey': 'SecretKey 是开发者拥有的项目身份密钥。',
       'Region': '域名中的地域信息',
-      'Bucket': '存储桶是 COS 中用于存储数据的容器，每个对象都存储在一个存储桶中。',
+      'Bucket': '存储桶是 COS 中用于存储数据的容器，每个对象都存储在一个存储桶中',
   }
   ```
   - 其他配置：
