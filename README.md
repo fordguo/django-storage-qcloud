@@ -11,6 +11,12 @@ django-storage-qcloud 是一个服务于腾讯云存储的 Django 自定义存�
 - 使用 pip 安装
 
 ```
+pip install django-storage-qcloud
+```
+
+或者直接从 git 安装
+
+```
 pip install git+https://github.com/fordguo/django-storage-qcloud.git
 ```
 
