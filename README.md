@@ -41,8 +41,8 @@ git+https://github.com/fordguo/django-storage-qcloud.git
   }
   ```
   - 其他配置：
-    COS_URL = 'https://www.qixincha.com' # 自定义域名， 不配置将使用 COS 默认域名
-    COS_FAST_CDN = False # 默认加速域名是否开启
+    - COS_URL = 'https://www.qixincha.com' # 自定义域名， 不配置将使用 COS 默认域名
+    - COS_FAST_CDN = False # 默认加速域名是否开启
 
 * 同步静态文件到云
   `python manage.py collectstatic`
