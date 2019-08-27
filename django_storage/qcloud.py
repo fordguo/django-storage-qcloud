@@ -54,8 +54,11 @@ class QcloudStorage(Storage):
 
         if getattr(settings, 'COS_URL', ''):
             url = "{}/{}".format(settings.COS_URL, name)
+        elif getattr(settings, 'COS_USE_CDN', False):
+            url = "https://{}.file.myqcloud.com/{}".format(
+                self.bucket, name)
         else:
-            url = "http://{}.cos.{}.myqcloud.com/{}".format(
+            url = "https://{}.cos.{}.myqcloud.com/{}".format(
                 self.bucket, self.option['Region'], name
             )
 
