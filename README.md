@@ -28,9 +28,9 @@ git+https://github.com/fordguo/django-storage-qcloud.git
 
 - 配置 setting.py:
   - 将上传文件存放到云
-    `DEFAULT_FILE_STORAGE = 'django_storage.qcloud.QcloudStorage'`
+    `DEFAULT_FILE_STORAGE = 'django_storage_qcloud.storage.QcloudStorage'`
   - 将静态文件存放到云
-    `STATICFILES_STORAGE = 'django_storage.qcloud.QcloudStorage'`
+    `STATICFILES_STORAGE = 'django_storage_qcloud.storage.QcloudStorage'`
   - 替换 SecretId， SecretKey, Region, Bucket 的值
   ```
   QCLOUD_STORAGE_OPTION = {
