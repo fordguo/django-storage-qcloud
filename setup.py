@@ -20,7 +20,7 @@ DESCRIPTION = "Django qcloud cos storage backend"
 AUTHOR = "Ford"
 AUTHOR_EMAIL = "agile.guo@gmail.com"
 URL = "https://github.com/fordguo/django-storage-qcloud"
-VERSION = '0.2.0'
+VERSION = '0.2.1'
 
 setup(
     name=NAME,

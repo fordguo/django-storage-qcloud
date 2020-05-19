@@ -41,6 +41,8 @@ class QcloudStorage(Storage):
         return name
 
     def exists(self, name):
+        if not name:
+            return False
         if self._check_url(name):
             return True
 
